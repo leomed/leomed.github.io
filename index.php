@@ -138,7 +138,7 @@
 	<div class="formtotal">	
 			<div class="formulario" id="Contacto">
 		<section class="contact">	
-				<form action="https://formsubmit.co/leo_amedri@hotmail.com" method="POST" class="form">
+				<form action="https://formsubmit.co/leo_amedri@hgmail.com" method="POST" class="form">
 					
 					<input type="text" placeholder="Nombre" name="nombre" required>
 					<input type="email" placeholder="Email" name="email" required>
@@ -155,5 +155,7 @@
 		</div>
 	</section>
 </footer>
+
+
 </body>
 </html>
