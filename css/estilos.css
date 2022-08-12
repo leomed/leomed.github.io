@@ -1,8 +1,7 @@
 main {
   width: 100%;
   display: flex;
-  justify-content: center;
-  margin-bottom: 200px; }
+  justify-content: center; }
 
 main .main {
   display: flex;
@@ -53,38 +52,60 @@ h6 {
 main .galeria {
   background: rgba(60, 60, 60, 0.5); }
 
-.galeria .info {
-  width: 100%;
-  text-align: center; }
-
 .contacto {
   margin-bottom: 200px; }
 
 .contacto .galeria .works {
-  padding: 10px;
-  background: #e27501;
-  background: linear-gradient(142deg, #e27501 30%, #ffb300 57%, #f66b01 68%, #d67600 100%, #cfff00 100%); }
-
-.galeria .info p {
-  color: ghostwhite;
-  font-family: "Kanit";
-  font-weight: 300;
-  font-size: 1.5em;
-  border-bottom: 1px solid white;
-  padding: 20px; }
+  padding: 10px; }
 
 /*-------------------------- */
+.cv {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  align-items: center; }
+
+.cv .logo-bts {
+  background: #dad6d2;
+  background: linear-gradient(142deg, rgba(218, 214, 210, 0.2) 20%, rgba(255, 179, 0, 0.7) 38%, rgba(246, 107, 1, 0.5) 68%, rgba(207, 255, 0, 0.2) 96%, rgba(214, 118, 0, 0.1) 100%);
+  width: 15%;
+  text-align: center;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  height: 350px; }
+
+.cv p {
+  color: whitesmoke;
+  margin-top: 40px;
+  font-size: 1em;
+  font-family: "Kanit";
+  font-weight: 300;
+  color: whitesmoke;
+  padding: 5px;
+  width: 100%;
+  text-align: center; }
+
+.cv .logo-bts i {
+  font-size: 5em;
+  color: white;
+  border-bottom: 1px solid white;
+  width: 100%; }
+
 .contacto .galeria {
-  height: 300px;
-  border-bottom: 2px solid white; }
+  height: 300px; }
 
 .contacto .galeria .works {
   display: flex;
   justify-content: space-around;
-  border-bottom: 2px white; }
+  background: #035d8e;
+  background: linear-gradient(0deg, rgba(3, 93, 142, 0.3) 12%, rgba(131, 196, 224, 0.4) 19%, rgba(10, 252, 233, 0.4) 28%, rgba(12, 183, 247, 0.2) 57%, #20d9e7 71%, rgba(22, 150, 207, 0.1) 100%);
+  border-radius: 20px;
+  border: none; }
 
 .works .imagenes {
-  border: 2px solid whitesmoke;
+  border: 2px solid aquamarine;
   opacity: 0.8;
   border-radius: 15px; }
 
@@ -93,8 +114,8 @@ main .galeria {
   transition: 2s all ease; }
 
 .works .imagenes img {
-  height: 150px;
-  width: 250px;
+  height: 250px;
+  width: 350px;
   border-radius: 10px; }
 
 /*-------------------------- */
@@ -124,7 +145,9 @@ h5 {
 .formulario .contact form {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  background: none;
+  border: none; }
 
 .formulario .contact form input[type="text"],
 .formulario .contact form input[type="email"],
@@ -134,7 +157,11 @@ h5 {
   margin-bottom: 10px;
   font-family: "Kanit";
   font-weight: 200;
-  font-size: 1em; }
+  font-size: 1em;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-bottom: 1px solid orange;
+  color: white; }
 
 .formulario .contact form input[type="text"],
 .formulario .contact form input[type="email"] {
@@ -147,15 +174,18 @@ h5 {
   max-width: 100%;
   min-height: 200px;
   max-height: 300px;
-  color: black; }
+  color: whitesmoke; }
 
 .formulario .contact form input[type="submit"] {
   width: 100%;
-  text-align: center;
+  background: navajowhite;
   font-family: "Kanit";
   font-size: 1em;
-  background: orange;
-  padding: 10px; }
+  padding: 10px;
+  color: black;
+  border-radius: 20px;
+  border: none;
+  border-bottom: 1px solid orange; }
 
 * {
   padding: 0px;
@@ -222,7 +252,8 @@ header .header .redes i:hover {
   transition: 3s all ease; }
 
 footer {
-  background: orange; }
+  background: #e27501;
+  background: linear-gradient(142deg, #e27501 30%, #ffb300 57%, #f66b01 68%, #d67600 100%, #cfff00 100%); }
 
 footer .footer .derechos {
   font-family: "Kanit";
@@ -244,11 +275,26 @@ footer .footer .derechos {
     flex-wrap: wrap;
     height: auto;
     justify-content: center; } }
+@media screen and (max-width: 1000px) {
+  .cv {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    height: auto; } }
+@media screen and (max-width: 1000px) {
+  .cv .logo-bts {
+    width: 50%;
+    margin: 10px;
+    height: auto; } }
 /*------------------------------------ */
 @media screen and (max-width: 1000px) {
   .contacto {
     height: auto; } }
 @media screen and (max-width: 1000px) {
+  .contacto .galeria {
+    height: auto; } }
+@media screen and (max-width: 1400px) {
   .contacto .galeria {
     height: auto; } }
 @media screen and (max-width: 1000px) {
@@ -258,6 +304,18 @@ footer .footer .derechos {
     display: flex;
     justify-content: center; } }
 @media screen and (max-width: 1000px) {
+  .works .imagenes {
+    width: auto;
+    justify-content: center;
+    display: flex;
+    margin: 5px; } }
+@media screen and (max-width: 1400px) {
+  .works {
+    width: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center; } }
+@media screen and (max-width: 1400px) {
   .works .imagenes {
     width: auto;
     justify-content: center;

@@ -24,7 +24,7 @@ $(document).ready(function(){
 	
 	 	$('#btn-Trabajos').on('click', function(){
 	 		$('html, body').animate({
- 				scrollTop: 800
+ 				scrollTop: 900
 	 		},500);
 
  		});
@@ -33,7 +33,7 @@ $(document).ready(function(){
 	
 	 	$('#btn-Contacto').on('click', function(){
 	 		$('html, body').animate({
- 				scrollTop: 1200
+ 				scrollTop: 1300
 	 		},500);
 
  		});
