@@ -97,7 +97,12 @@
 
 
 </main>
-
+<section class="cv">
+ 	
+ 	<div class="logo-bts"><p><i class="bi bi-person-lines-fill"></i></p><p>Junior web developer, pro-active, in constant evolution.</p></div>
+ 	<div class="logo-bts"><p><i class="bi bi-person-square"></i></p><p>I would like to improve my skills and habilities in web design and in a near future in programming.</p></div>
+ 	<div class="logo-bts"><p><i class="bi bi-wrench-adjustable"></i></p><p>As a beginner in web developing  i do not only adjust to problems but also i'm looking forward to working in a team so as to learn the essentials of this profession. </p></div>
+ </section>	
 	
 <section class="contacto">
 		<section class="galeria">

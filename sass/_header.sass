@@ -5,12 +5,19 @@
 
 body
 	font-size: 15px
-	background: url('../img/sabe.jpg')
+	background: darkgrey
 	background-attachment: scroll
 	background-position: center
 	background-size: cover	
 	background-repeat: no-repeat
 	height: auto	
+
+body::-webkit-scrollbar
+	background: whitesmoke	
+
+body::-webkit-scrollbar-thumb
+	background: orange
+	border-radius: 5px
 
 
 
@@ -20,8 +27,45 @@ header
 	display: flex
 	align-items: center
 	justify-content: center
+	position: relative
+	background: black	
 header .header
 	text-align: center
+	z-index: 1
+
+
+header 
+	width: 100%
+	height: 100%
+	position: relative
+	
+	top: 0
+	left: 0
+
+
+header .contenedorvideo  
+	
+	opacity: 0.5
+	background: black 
+	top: 0
+	left: 0
+	position: absolute
+	z-index: 1
+	width: 100%
+	height: 100%
+
+	
+
+header .contenedorvideo video
+	left: 40
+
+	z-index: 0
+	position: absolute
+	top: 0
+	left: 0
+	object-fit: cover
+	width: 100%
+	height: 100%
 
 
 header .header .menu a
@@ -32,23 +76,33 @@ header .header .menu a
 	font-weight: 200
 	color: white
 	position: relative
-
+	
 
 
 header .header .menu a:hover 
 	text-decoration: underline
 
 header .header .titulos
-	border: 1px solid orange
-	padding: 20px
+	
+	
+	
+	
 
 
 header .header .titulos h1
 	font-family: 'Kanit'
-	color: whitesmoke
-	font-size: 4em
+	color: orange
+	font-size: 5em
 	font-weight: 200
 
+	
+header .arrow
+	margin-top: 80px
+header .arrow i
+	font-size: 6em
+	color: whitesmoke	
+	text-decoration: none
+	padding: 10px 
 
 
 
@@ -57,7 +111,9 @@ header .header .titulos h2
 	color: whitesmoke
 	font-size: 2em
 	font-weight: 200
+	
 	border-top: 1px solid orange
+
 
 
 /*---------------------------*/
@@ -67,6 +123,7 @@ header .header .redes i
 	color: orange 
 	text-decoration: none
 	padding: 10px 
+	
 
 header .header .redes i:hover
 	color: whitesmoke
