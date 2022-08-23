@@ -10,8 +10,6 @@ main .main {
   height: 150px;
   align-items: center;
   border-bottom: 1px solid orange;
-  background: #e27501;
-  background: linear-gradient(142deg, #e27501 30%, #ffb300 57%, #f66b01 68%, #d67600 100%, #cfff00 100%);
   width: 98%;
   border-radius: 5px;
   z-index: 1; }
@@ -42,7 +40,7 @@ main .main .lenguajes p {
 
 main .main .lenguajes p i {
   font-size: 1.5em;
-  color: white; }
+  color: orange; }
 
 /*-------------------------- */
 h6 {
