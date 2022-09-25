@@ -1,3 +1,19 @@
+<?php 	
+ function contar_usuarios(){
+ 	$archivo = 'contador.txt';
+ 	if (file_exists($archivo)) {
+ 		$cuenta = file_get_contents($archivo) + 1;
+ 		file_put_contents($archivo, $cuenta);
+ 		return $cuenta;
+ 	}else{
+ 		file_put_contents($archivo, 1);
+ 		return 1;
+ 	}
+ }
+ ?>
+
+
+
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
@@ -8,7 +24,7 @@
 	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" href="css/all.min.css">
 
-	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,8 +41,20 @@
 	
 </head>
 <body>
-	
+
 <header>
+
+
+		<div class="contenedorvideo">
+		<video muted autoplay loop src="vid/5.mp4">
+			
+		</video>
+
+
+		</div>
+
+		
+		
 	<section class="header">
 		<div class="menu">
 			<a href="#" id="btn-Trabajos">Trabajos</a>
@@ -41,8 +69,21 @@
 			<a href="https://github.com/leomed" class="github"><i class="fa-brands fa-github-alt"></i></a>
 			<a href="https://www.facebook.com/leo.medri/" class="facebook"><i class="fa-brands fa-facebook-square"></i></a>
 			<a href="https://www.instagram.com/leopoldomedri/" class="instagram"><i class="fa-brands fa-instagram-square"></i></a>
+
+		</div>
+
+
+		<div class="arrow">	
+			<div class="visitantes">
+			<div class="numeros">	
+				<p>	Visitas </p>
+			<p class="numero"><?php echo contar_usuarios(); ?></p>
+			</div>		
+		</div>
+				<a href="#"><i class="bi bi-arrow-down-circle"></i></a>
 		</div>
 	</section>
+		
 </header>
 
 
@@ -97,19 +138,17 @@
 
 
 </main>
+
 <section class="cv">
  	
  	<div class="logo-bts"><p><i class="bi bi-person-lines-fill"></i></p><p>Junior web developer, pro-active, in constant evolution.</p></div>
  	<div class="logo-bts"><p><i class="bi bi-person-square"></i></p><p>I would like to improve my skills and habilities in web design and in a near future in programming.</p></div>
  	<div class="logo-bts"><p><i class="bi bi-wrench-adjustable"></i></p><p>As a beginner in web developing  i do not only adjust to problems but also i'm looking forward to working in a team so as to learn the essentials of this profession. </p></div>
  </section>	
-	
 <section class="contacto">
 		<section class="galeria">
 			
-		<div class="info">
-			<p>Just a beginner in web developing who is looking for gaining new habilities and improve skills.</p>
-		</div>
+		
 		<h6>Jobs</h6>
 		<div class="works" id="Trabajos">
 			
@@ -139,10 +178,12 @@
 	</section>
 
 </section>
-	<h5>Contacto</h5>
+	
 	<div class="formtotal">	
+
 			<div class="formulario" id="Contacto">
 		<section class="contact">	
+			<h5>	Contacto</h5>
 				<form action="https://formsubmit.co/leo_amedri@hotmail.com" method="POST" class="form">
 					
 					<input type="text" placeholder="Nombre" name="nombre" required>
@@ -160,7 +201,5 @@
 		</div>
 	</section>
 </footer>
-
-
 </body>
 </html>
