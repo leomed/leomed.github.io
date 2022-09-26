@@ -81,7 +81,7 @@
 			</div>		
 		</div>
 				<a href="#"><i class="bi bi-arrow-down-circle"></i></a>
-		</div>
+		</div> 
 	</section>
 		
 </header>
