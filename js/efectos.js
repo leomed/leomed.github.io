@@ -39,5 +39,45 @@ $(document).ready(function(){
  		});
 	
 
+	$(window).scroll(function(){
+		var windowWidth = $(window).width()
+		if (windowWidth > 800) {
+
+		var srcoll = $(window).scrollTop();
+
+		$('main').css({
+			opacity: 0,
+			marginLeft: '100px'
+			
+		});
+
+		$('main').animate({
+			opacity: 1,
+			marginLeft: 0
+
+		});
+
+
+		$('.cv .logo-bts').css({
+			opacity: 0
+
+		});
+
+		$('.cv .logo-bts').animate({
+			opacity: 1
+
+		}, 3000);
+
+
+		}
+
+
+
+
+
+
+
+	});
+
 
 });
