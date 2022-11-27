@@ -1,4 +1,32 @@
 $(document).ready(function(){
+
+	$('.botonn').on('click', function(){
+		
+		
+		$('.contacto').slideToggle();
+		
+
+	});
+
+	
+
+	$(window).scroll(function(){
+
+		if($(window).scrollTop() > 800){
+
+			$('.cv').css({
+			opacity: 0,
+		
+			});
+
+
+			$('.cv').animate({
+				opacity: 1
+			});
+			console.log('hola');
+		}
+	});
+
  $('.menu a').each(function(index, elemento){
  	$(this).css({
  		'top': '-400'
@@ -16,7 +44,7 @@ $(document).ready(function(){
  	});
  	$(this).animate({
  		marginLeft: '0'
- 	}, 1500 + (index));
+ 	}, 1900 + (index));
  	});
 
 
@@ -42,42 +70,31 @@ $(document).ready(function(){
 	$(window).scroll(function(){
 		var windowWidth = $(window).width()
 		if (windowWidth > 800) {
+		
 
-		var srcoll = $(window).scrollTop();
 
+		var scroll = $(window).scrollTop();
+		
 		$('main').css({
 			opacity: 0,
-			marginLeft: '100px'
-			
+			marginTop: '-20px'
+		
 		});
 
 		$('main').animate({
 			opacity: 1,
-			marginLeft: 0
+			marginTop: '20px'
 
-		});
+		})};
 
-
-		$('.cv .logo-bts').css({
-			opacity: 0
-
-		});
-
-		$('.cv .logo-bts').animate({
-			opacity: 1
-
-		}, 3000);
-
-
-		}
-
-
-
-
-
-
+	
 
 	});
+
+	
+
+		
+
 
 
 });
